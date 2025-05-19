@@ -2,17 +2,15 @@ import React from "react";
 import Contact from "../Contact/Contact";
 import s from "./ContactList.module.css";
 import { useSelector } from "react-redux";
-import { selectError, selectFilteredContacts, selectLoading} from "../../redux/selectors";
-
-
+import { selectError, selectLoading } from "../../redux/contacts/contactsSelectors";
+import { selectFilteredContacts } from "../../redux/filters/filtersSelectors";
 
 const ContactList = () => {
-  const filteredContacts = useSelector(selectFilteredContacts)
-  const loading = useSelector(selectLoading)
-  const error = useSelector(selectError)
-  
+  const filteredContacts = useSelector(selectFilteredContacts);
+  const loading = useSelector(selectLoading);
+  const error = useSelector(selectError);
 
-  if (filteredContacts.length === 0 ){
+  if (filteredContacts.length === 0) {
     return <p>No contacts found</p>;
   }
 
