@@ -1,6 +1,6 @@
 import React from 'react'
 import { useDispatch } from 'react-redux';
-import { registerThunk } from '../../redux/auth/authOperations';
+import { registerThunk } from '../../redux/auth/operations';
 import { ErrorMessage, Field, Form, Formik } from 'formik';
 import s from './RegisterForm.module.css'
 import * as Yup from "yup";

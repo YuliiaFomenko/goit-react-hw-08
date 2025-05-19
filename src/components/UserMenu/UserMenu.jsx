@@ -1,7 +1,7 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { selectUser } from '../../redux/auth/authSelectors'
-import { logOutThunk } from '../../redux/auth/authOperations'
+import { selectUser } from '../../redux/auth/selectors'
+import { logOutThunk } from '../../redux/auth/operations'
 import { Button } from '@mui/material'
 
 const UserMenu = () => {

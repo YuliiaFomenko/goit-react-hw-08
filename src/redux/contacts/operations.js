@@ -1,5 +1,5 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
-import { goitAPI } from "../auth/authOperations";
+import { goitAPI } from "../auth/operations";
 
 
 

@@ -1,7 +1,7 @@
 import { lazy, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { selectIsRefreshing } from "./redux/auth/authSelectors";
-import { refreshThunk } from "./redux/auth/authOperations";
+import { selectIsRefreshing } from "./redux/auth/selectors";
+import { refreshThunk } from "./redux/auth/operations";
 import { Route, Routes } from "react-router-dom";
 import Layout from "./components/Layout/Layout";
 import RestrictedRoute from "./components/RestrictedRoute/RestrictedRoute";
